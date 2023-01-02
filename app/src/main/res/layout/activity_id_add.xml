@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Id_add">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!-- 아이디 입력 큰 글씨 TextView -->
+    <TextView
+        android:id="@+id/id_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:text="이메일을 입력해 주세요."
+        android:textSize="20sp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <!-- 아이디 입력 작은 글씨 TextView -->
+    <TextView
+        android:id="@+id/id_input_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="15dp"
+        android:text="먼저 로그인이 필요해요 :)."
+        android:textSize="9sp">
+    </TextView>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+    <!-- 이메일 입력 EditText --> <!-- background 둥근 Edit Text-->
+    <EditText
+        android:id="@+id/id_input_edittext"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="이메일을 입력해주세요"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:padding="13dp"
+        android:inputType="textEmailAddress">
+    </EditText>
+    </LinearLayout>
+
+    <!-- 다음 Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="500dp"
+        android:text="계속하기">
+    </Button>
+    </LinearLayout>
+</LinearLayout>
